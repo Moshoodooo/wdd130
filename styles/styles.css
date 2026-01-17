@@ -1,20 +1,49 @@
+/* Reset basic spacing */
+* {
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+}
+
+/* Main content */
 main {
     max-width: 800px;
     margin: 1rem auto;
 }
 
+/* Main heading */
+h1 {
+    color: #333;
+}
+
+/* Profile image inside main */
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #333;
+    padding: 2px;
+    box-shadow: 0 0 10px #777;
 }
 
+/* Aside section */
 aside {
     width: 300px;
     margin: 1rem auto;
     border: 1px solid #333;
     padding: 1rem;
     background-color: #f2f2f2;
-    color: #000;
+    color: #000000;
 }
 
 aside img {
@@ -22,10 +51,12 @@ aside img {
     height: auto;
 }
 
+/* Paragraph styling */
 p {
     padding: 0;
 }
 
+/* Footer */
 footer {
     margin-top: 2rem;
     border-top: 1px solid #333;
