@@ -1,148 +1,147 @@
 /* ==============================
    WDD 130 Rafting Project CSS
-   Author: Anjola Rebeca
+   Author: Anjola Rebecca
    ============================== */
 
-/* ---------- Universal Reset ---------- */
-*,
-*::before,
-*::after {
+/* ---------- Reset ---------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ---------- CSS Variables ---------- */
+/* ---------- Variables ---------- */
 :root {
     --primary-color: #333;
     --accent-color: #f2f2f2;
     --text-color: #000;
-    --footer-border-color: #333;
 }
 
-/* ---------- Body Styles ---------- */
+/* ---------- Body ---------- */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #fff;
     color: var(--text-color);
 }
 
-/* ---------- Header ---------- */
+/* ---------- Header (GRID) ---------- */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    padding: 1rem;
     background-color: var(--primary-color);
-    color: #fff;
 }
 
 header img {
     height: 60px;
 }
 
-header nav a {
-    color: #fff;
+/* ---------- Nav (FLEX) ---------- */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    margin-left: 20px;
 }
 
-/* ---------- Main Content ---------- */
+/* ---------- Main ---------- */
 main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 10px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
-/* ---------- Hero Section ---------- */
+/* ---------- Hero ---------- */
 .hero {
     position: relative;
-    text-align: left;
-    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
 }
 
 .hero h1 {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 2em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
 }
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    max-width: 400px;
 }
 
 .hero article img {
     float: right;
-    width: 150px;
-    height: auto;
-    margin-left: 10px;
+    width: 120px;
+    margin-left: 1rem;
 }
 
-/* ---------- Images ---------- */
-main img {
-    width: 150px;
-    height: auto;
+/* ---------- History ---------- */
+.history {
+    margin: 3rem 0;
 }
 
-/* ---------- Aside Section ---------- */
-aside {
-    width: 250px;
-    margin: 20px;
-    border: 1px solid var(--primary-color);
-    padding: 10px;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
 }
 
-aside img {
+.history img {
     width: 200px;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
 }
 
-/* ---------- Paragraphs ---------- */
-p {
-    padding: 0;
-    margin-bottom: 10px;
+/* ---------- Adventures ---------- */
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 150px;
 }
 
 /* ---------- Footer ---------- */
 footer {
-    margin-top: 20px;
-    border-top: 2px solid var(--footer-border-color);
-    text-align: center;
-    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    border-top: 2px solid var(--primary-color);
 }
 
-/* ---------- Footer Social Media ---------- */
-footer .socialmedia {
-    margin-top: 10px;
+.socialmedia {
+    display: flex;
+    gap: 0.5rem;
 }
 
-footer .socialmedia a {
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer .socialmedia img {
+.socialmedia img {
     width: 30px;
-    height: auto;
-}
-
-/* ---------- Links ---------- */
-a {
-    color: var(--primary-color);
 }
