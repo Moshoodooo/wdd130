@@ -4,7 +4,9 @@
    ============================== */
 
 /* ---------- Reset ---------- */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +17,7 @@
     --primary-color: #333;
     --accent-color: #f2f2f2;
     --text-color: #000;
+    --header-text-color: #fff;
 }
 
 /* ---------- Body ---------- */
@@ -45,8 +48,10 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--header-text-color);
     text-decoration: none;
+    font-weight: bold;
+    /* improves readability */
 }
 
 /* ---------- Main ---------- */
@@ -63,15 +68,17 @@ main {
 
 .hero img {
     width: 100%;
+    display: block;
 }
 
 .hero h1 {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    color: white;
+    color: var(--header-text-color);
     background: rgba(0, 0, 0, 0.6);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
 }
 
 .hero article {
@@ -79,15 +86,18 @@ main {
     bottom: 1rem;
     left: 1rem;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: var(--header-text-color);
     padding: 1rem;
     max-width: 400px;
+    font-size: 0.95rem;
 }
 
 .hero article img {
     float: right;
     width: 120px;
     margin-left: 1rem;
+    border-radius: 8px;
+    /* subtle polish */
 }
 
 /* ---------- History ---------- */
@@ -135,6 +145,11 @@ footer {
     padding: 1rem;
     background-color: var(--accent-color);
     border-top: 2px solid var(--primary-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--text-color);
 }
 
 .socialmedia {
