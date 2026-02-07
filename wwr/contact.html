@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact White Water Rafting Co. for questions, reservations, or suggestions.">
+    <meta name="author" content="Anjola Rebecca">
+    <title>Contact Us | White Water Rafting Co.</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation (unchanged) -->
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Company Info Section -->
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <p>Address: 123 River Road, Adventure City, USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@whitewaterrafting.com</p>
+
+            <!-- Google Map Embed -->
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section class="employees">
+            <h2>Our Team</h2>
+
+            <figure>
+                <img src="images/guide1.jpeg" alt="John Doe, Rafting Guide">
+                <figcaption>John Doe – Lead Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide2.jpeg" alt="Jane Smith, Rafting Guide">
+                <figcaption>Jane Smith – Safety Coordinator</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide3.jpeg" alt="Mike Lee, Rafting Guide">
+                <figcaption>Mike Lee – Adventure Specialist</figcaption>
+            </figure>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of Message:</p>
+                <label>
+                    <input type="radio" name="purpose" value="general" required> General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="reservation"> Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="website"> Website Suggestion
+                </label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter"> Please subscribe me to the monthly
+                    newsletter
+                </label>
+
+                <button type="submit">Submit Your Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (unchanged) -->
+    <footer>
+        <p>© 2026 White Water Rafting Co. | Anjola Rebecca</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="White Water Rafting on Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="White Water Rafting on Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="White Water Rafting on Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
