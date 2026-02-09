@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Adventure Rafting Co.</title>
+    <title>Home | Adventure Rafting Co.</title>
     <meta name="description"
-      content="Home page for Anjola Rebeca in WDD 130, showcasing web fundamentals and projects.">
+      content="Adventure Rafting Co. offers thrilling rafting trips. Sign up for newsletters and explore our trips!">
     <meta name="author" content="Anjola Rebeca">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -15,7 +15,7 @@
 
     <!-- ===== Header ===== -->
     <header>
-        <img src="images/profile.jpeg" alt="Hello, my name is Anjola Rebeca">
+        <img src="images/profile.jpeg" alt="Adventure Rafting Co. Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -28,15 +28,45 @@
     <main>
         <!-- Hero Section -->
         <div class="hero">
+            <img src="images/hero.jpg" alt="Adventure Rafting on the river">
             <h1>Adventure Rafting Co.</h1>
             <article>
-                <img src="images/profile.jpeg" alt="Anjola Rebeca Profile">
-                <p>Welcome! My name is Anjola Rebeca, and I love organizing rafting adventures for
-                    all ages. Join us for an unforgettable experience on the river!</p>
+                <p>Welcome! Join us for unforgettable rafting adventures suitable for all skill
+                    levels.</p>
+
+                <!-- Newsletter Form -->
+                <form class="newsletter">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Sign Up for Adventure Updates</button>
+                </form>
+
+                <!-- Call to Action Button -->
+                <a href="trips.html" class="cta-button">View Our Trips</a>
             </article>
         </div>
 
-        <!-- Sections -->
+        <!-- CSS Grid Section: Purpose & Offerings -->
+        <section class="grid-section">
+            <div class="grid-item">
+                <img src="images/rafting1.jpg" alt="Family Rafting Adventure">
+                <h2>Family Adventures</h2>
+                <p>Enjoy safe and fun rafting experiences for the whole family, including beginners
+                    and kids.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/rafting2.jpg" alt="Thrilling Rapids">
+                <h2>Thrilling Rapids</h2>
+                <p>For the adrenaline seekers, tackle exciting rapids with our expert guides
+                    ensuring safety.</p>
+            </div>
+        </section>
+
+        <!-- History & Adventure Section -->
         <section>
             <h2>History</h2>
             <p>Adventure Rafting Co. was founded in 2020 to provide safe and exciting rafting
@@ -51,17 +81,9 @@
         </section>
     </main>
 
-    <!-- ===== Aside ===== -->
-    <aside>
-        <h2>Nigeria</h2>
-        <img src="images/nigeria.jpeg" alt="Map or landmark of Nigeria">
-        <p>Nigeria is a country in West Africa, known for its diverse cultures, landscapes, and rich
-            history.</p>
-    </aside>
-
     <!-- ===== Footer ===== -->
     <footer>
-        <p>©2026 🌴 Adventure Rafting Co. 🌴 Anjola Rebeca, Ibadan, Nigeria</p>
+        <p>© 2026 Adventure Rafting Co. | Anjola Rebeca, Ibadan, Nigeria</p>
         <nav class="socialmedia">
             <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
             <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
